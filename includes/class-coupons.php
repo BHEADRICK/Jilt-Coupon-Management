@@ -59,7 +59,7 @@ class JCM_Coupons {
 
 	    $sql = "select pm.post_id from $wpdb->postmeta pm
 join $wpdb->postmeta j on pm.post_id = j.post_id && j.meta_key = 'jilt_discount_id'
-where pm.meta_key = 'expiry_date' && pm.meta_value < '2018-05-15' && pm.meta_value != '';";
+where pm.meta_key = 'expiry_date' && pm.meta_value < curdate() && pm.meta_value != '';";
 //join wp_postmeta u on u.post_id = pm.post_id and u.meta_key = 'usage_count'
 	    $expired_coupons = $wpdb->get_col($sql);
 
