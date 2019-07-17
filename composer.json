@@ -1,0 +1,13 @@
+{
+    "name": "bheadrick/jilt-coupon-management",
+    "description": "Hide jilt coupons and automatically delete old expired jilt coupons",
+    "type": "wordpress-plugin",
+    "license": "gpl3",
+    "authors": [
+        {
+            "name": "Bryan Headrick",
+            "email": "bryan@poolwarehouse.com"
+        }
+    ],
+    "require": {}
+}
